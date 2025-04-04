@@ -17,8 +17,8 @@ app.use(express.json());
 
 app.use("/api/songs", songsRoutes);
 app.use("/api/rol", rolRoutes);
-app.use("/api/artist", artistRoutes);
-app.use("/api/playlist", playlistRoutes);
+// app.use("/api/artist", artistRoutes);
+// app.use("/api/playlist", playlistRoutes);
 app.use("/api/users", userRoutes);
 
 app.get("/", (req, res) => {
@@ -26,5 +26,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on Port ${PORT} on http://127.0.0.1:${PORT}`);
+  console.log(`Server is running on Port ${PORT} on backend-spotify-production.up.railway.app`);
 });

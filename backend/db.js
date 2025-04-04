@@ -9,7 +9,7 @@ export const connectDB = async () => {
     await mongoose.connect(process.env.MONGO_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        connectTimeoutMS: 60000, // Aumenta el tiempo de espera a 60 segundos por si acaso 
+        connectTimeoutMS: 30000, // Aumenta el tiempo de espera a 30 segundos por si acaso 
         serverSelectionTimeoutMS: 30000 
 
       });
